@@ -28,7 +28,7 @@ public class HashHw {
                                count+=num;
                         }
                       count /= gradesArr.length;
-                        System.out.println(name + "Average = " + count);
+                        System.out.println(name +" " + "Average = " + count);
         }
         
        
