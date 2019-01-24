@@ -6,7 +6,27 @@ import java.util.Scanner;
 public class RockPaperClass {
 
 	public static void main(String[] args) {
+		boolean retry = false;
+		int loopCount= 0;
+		
+		while(!retry) {
+		try {
+			usersHand();
+			retry = true;
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Error Cant choose a negative number or a letter value!");
+			System.out.println();
+		//	usersHand();
+			if(loopCount == 5) retry = true;
+		
+		}
+	  }
+	}
+	public static void usersHand() {
 		System.out.println("Welcome to Rock Paper Scissor Game!");
+		System.out.println();
 	    System.out.println("Choose a number from 0-2: Rock = 0, Paper = 1 and Scissor's = 2");
     
 		    Scanner reader = new Scanner(System.in);
@@ -20,7 +40,7 @@ public class RockPaperClass {
 
 		    Random randNumGenerator = new Random();
 		    int randNum = randNumGenerator.nextInt(3); // Give me a random number between 0 (inclusive) and 3 (exclusive) -> 0, 1, or 2
-
+		    
 		    if (randNum == 0 && input == 0) {
 		      System.out.println("Computer Choose Rock and You Choose Rock. Its a Tie! ");
 		    }
@@ -49,5 +69,6 @@ public class RockPaperClass {
 		      System.out.println("You tied! Computer choose scissor's and you picked scissor's");
 		    }
 		    reader.close();
-	  }
+		    
+	}
 	}
