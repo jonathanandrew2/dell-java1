@@ -64,14 +64,6 @@ public class DriversLicense {
 		this.lastName = lastName;
 	}
 
-//	public int getDob() {
-//		return dob;
-//	}
-//
-//	public void setDob(int dob) {
-//		this.dob = dob;
-//	}
-
 	public int getHeight() {
 		return height;
 	}

@@ -14,19 +14,12 @@ public class LicenseProgram {
 	dL.dobYYYY = 1992;
 	dL.firstName = "Jonathan";
 	dL.lastName = "Hernandez";
-			
 
-	
-	
 	System.out.println("Name: " + dL.getFirstName() + " " + dL.getLastName());
 	System.out.println("Age : " + dL.ageOfPerson());
 	
-		System.out.println();
+	
 
 	}
-	
-	
-
-
 }
 
